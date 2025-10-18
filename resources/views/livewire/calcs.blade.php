@@ -28,6 +28,6 @@ mount(function () {
 <div>
     <h1>計算結果</h1>
     <p>
-        {{ $num1 }}{{ $calc }}{{ $num2 }}={{ $result }}
+        {{ $num1 }} {{ $calc }} {{ $num2 }} = {{ $result }}
     </p>
 </div>
