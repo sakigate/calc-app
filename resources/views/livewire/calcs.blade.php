@@ -2,24 +2,24 @@
 
 use function Livewire\Volt\{state, mount};
 
-state(["num1", "operator", "num2", "result", "calc"]);
+state(['num1', 'operator', 'num2', 'result', 'calc']);
 
-mount(function(){
-    if ($this->operator == "addition") {
+mount(function () {
+    if ($this->operator == 'addition') {
         $this->result = $this->num1 + $this->num2;
-        $this->calc = "+";
-    } elseif ($this->operator == "subtraction") {
+        $this->calc = '+';
+    } elseif ($this->operator == 'subtraction') {
         $this->result = $this->num1 - $this->num2;
-        $this->calc = "-";
-    } elseif ($this->operator == "multiplication") {
+        $this->calc = '-';
+    } elseif ($this->operator == 'multiplication') {
         $this->result = $this->num1 * $this->num2;
-        $this->calc = "×";
-    } elseif ($this->operator == "division") {
+        $this->calc = '×';
+    } elseif ($this->operator == 'division') {
         $this->result = $this->num1 / $this->num2;
-        $this->calc = "÷";
+        $this->calc = '÷';
     } else {
-        $this->result = "無効な演算子です。";
-        $this->calc = "?";
+        $this->result = '無効な演算子です。';
+        $this->calc = '?';
     }
 });
 
